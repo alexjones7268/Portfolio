@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import TwitterIcon from "@material-ui/icons/Twitter";
+import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import InstagramIcon from "@material-ui/icons/Instagram";
-
+import { AddToHomeScreen } from "@material-ui/icons";
 import Social from "./Social";
 
 const StyledSocials = styled.div`
@@ -20,23 +18,18 @@ const Socials = () => {
     <StyledSocials>
       <Social
         icon={<GitHubIcon fontSize="inherit" />}
-        link="https://github.com/chase-manning"
+        link="https://github.com/smile101603"
         text="GitHub"
       />
       <Social
-        icon={<TwitterIcon fontSize="inherit" />}
-        link="https://twitter.com/chase_manning_"
-        text="Twitter"
+        icon={<Telegram fontSize="inherit" />}
+        link="https://t.me/sunstar987"
+        text="Telegram"
       />
       <Social
-        icon={<LinkedInIcon fontSize="inherit" />}
-        link="https://www.linkedin.com/in/chasemanning"
-        text="Linked In"
-      />
-      <Social
-        icon={<InstagramIcon fontSize="inherit" />}
-        link="https://www.instagram.com/chase.manning.nz"
-        text="Instagram"
+        icon={<AddToHomeScreen fontSize="inherit" />}
+        link="https://discord.com/users/sunstar7077"
+        text="Discord"
       />
     </StyledSocials>
   );

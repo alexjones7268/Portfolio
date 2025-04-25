@@ -2,12 +2,12 @@
 
 ## About
 
-This repo is for [the website of Chase Manning](https://chase.manning.dev).  
+<!-- This repo is for [the website of Martin](https://Martin.dev).   -->
 This site is built using React, everyone's favourite web development framework!
 
-## Contributing
+<!-- ## Contributing
 
-If you are interested in contributing, please check out the [Contribution Guide](https://github.com/chase-manning/Personal-Website/blob/master/.github/CONTRIBUTING.md).
+If you are interested in contributing, please check out the [Contribution Guide](https://github.com/smile101603/personal-website/blob/master/.github/CONTRIBUTING.md). -->
 
 ## Running Locally
 

@@ -32,7 +32,7 @@ const Logo = ({ primary }: Props) => {
     <StyledLogo>
       <LogoIcon primary={primary} />
       <Text primary={primary}>
-        Chase<Fullstop>.</Fullstop>
+        Martin<Fullstop>.</Fullstop>
       </Text>
     </StyledLogo>
   );

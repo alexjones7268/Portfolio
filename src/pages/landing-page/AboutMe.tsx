@@ -230,7 +230,7 @@ const AboutMe = () => {
           <Button
             onClick={() =>
               (window as any)
-                .open("https://github.com/chase-manning", "_blank")
+                .open("https://github.com/smile101603", "_blank")
                 .focus()
             }
           >
