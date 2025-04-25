@@ -198,17 +198,15 @@ const AboutMe = () => {
         <PinkSquare
           src={pinkSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 100 : 200
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 100 : 200
+              }px))`,
           }}
         />
         <WhiteSquare
           src={whiteSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 200 : 400
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 200 : 400
+              }px))`,
           }}
         />
         <BlurredSquare
