@@ -222,7 +222,7 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            I'm a developer living in USA, building DeFi and NFT products.
+            I'm a developer living in London, building DeFi and NFT products.
           </Description>
         </TopSection>
         <Bold>Check out my work.</Bold>
@@ -230,7 +230,7 @@ const AboutMe = () => {
           <Button
             onClick={() =>
               (window as any)
-                .open("https://github.com/smile101603", "_blank")
+                .open("https://github.com/chase-manning", "_blank")
                 .focus()
             }
           >

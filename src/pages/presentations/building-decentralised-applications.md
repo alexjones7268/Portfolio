@@ -12,8 +12,8 @@ Welcome to my guest lecture on Building Full Stack Decentralised Applications. I
 
 ## About me
 
-- Name: Joshua Kitchen
-- From: United States
+- Name: Chase Manning
+- From: New Zealand
 - Job: Software Engineer
 - Area: Full Stack/Product
 
@@ -222,7 +222,7 @@ import erc20Abi from "./erc20-abi.json";
 
 const RPC = "https://my-cool-rpc.com/";
 const USER = "0x15463F7566d797a4b36517eB3A1cAFaB58f1A381";
-const JOSHUA = "0x3A61da6D37493E2f248A6832F49b52Af0a6f4Fbb";
+const CHASE = "0x3A61da6D37493E2f248A6832F49b52Af0a6f4Fbb";
 const UNI_ADDRESS = "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984";
 const PRIVATE_KEY = "[[users private key]]";
 
@@ -233,7 +233,7 @@ const uniContract = new ethers.Contract(UNI_ADDRESS, erc20Abi, signer);
 
 const uniBalance = await uniContract.balanceOf(USER);
 
-const tx = await uniContract.transfer(JOSHUA, uniBalance);
+const tx = await uniContract.transfer(CHASE, uniBalance);
 ```
 
 ???
@@ -319,11 +319,11 @@ function App() {
           abi: erc20Abi,
           address: UNI_ADDRESS,
           functionName: "transfer",
-          args: [JOSHUA, 100],
+          args: [CHASE, 100],
         })
       }
     >
-      Send UNI to Joshua
+      Send UNI to Chase
     </button>
   );
 }
@@ -467,7 +467,7 @@ import ethers from "ethers";
 import erc20Abi from "./erc20-abi.json";
 
 const RPC = "https://my-cool-rpc.com/";
-const JOSHUA = "0x3A61da6D37493E2f248A6832F49b52Af0a6f4Fbb";
+const CHASE = "0x3A61da6D37493E2f248A6832F49b52Af0a6f4Fbb";
 const UNI_ADDRESS = "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984";
 
 const provider = new ethers.JsonRpcProvider(RPC);
@@ -476,15 +476,15 @@ const uniContract = new ethers.Contract(UNI_ADDRESS, erc20Abi, provider);
 
 // event Transfer(address indexed from, address indexed to, uint256 value);
 const transferEvents = await uniContract.queryFilter(
-  uniContract.filters.Transfer(null, JOSHUA)
+  uniContract.filters.Transfer(null, CHASE)
 );
 
-console.log(transferEvents); // Logs: Data for all of the UNI transfers to Joshua
+console.log(transferEvents); // Logs: Data for all of the UNI transfers to Chase
 ```
 
 ???
 
-Here is an example of querying events on-chain using Ethers. We're using a function here queryFilter which queries the events for that specific contract. This function takes a filter as an input, and we are using a filer here of the Transfer event. Looking above in that comment, this is showing what the event looks like for an ERC20 token. You'll notice that the from and to parameters are indexed. What this means is that we can filter on them when we query them. The Transfer filter takes in a parameter for each indexed value. Entering null means that there won't be filtering on that value. You can see I've entered null for the from value here, and JOSHUA for the to. Meaning this will return a list of all of the transfer events to Joshua.
+Here is an example of querying events on-chain using Ethers. We're using a function here queryFilter which queries the events for that specific contract. This function takes a filter as an input, and we are using a filer here of the Transfer event. Looking above in that comment, this is showing what the event looks like for an ERC20 token. You'll notice that the from and to parameters are indexed. What this means is that we can filter on them when we query them. The Transfer filter takes in a parameter for each indexed value. Entering null means that there won't be filtering on that value. You can see I've entered null for the from value here, and CHASE for the to. Meaning this will return a list of all of the transfer events to Chase.
 
 Another option for querying events is using the getLogs function. This has a few benefits, such as being able to query events from multiple contracts at once. And multiple events at once. So is better suited when querying lots of data.
 
@@ -757,7 +757,7 @@ background-image: url("https://i.imgur.com/BqF88iw.png")
 ## ENS
 
 - ENS is a service that gives your wallet address an easier to read username
-- They are usually in the format `vitalik.eth` or `Joshua.eth`
+- They are usually in the format `vitalik.eth` or `chase.eth`
 - When registering an ENS domain, you can set up a bidirectional mapping between your wallet address and ENS
 - Allowing users to send tokens to vitalik.eth instead of your wallet address
 - This is a similar concept to DNS, how a user would navigate to google.com instead of 172.217.0.46
@@ -766,7 +766,7 @@ background-image: url("https://i.imgur.com/BqF88iw.png")
 
 ???
 
-ENS is a service that gives your wallet address an easier to read username. They are usually in the format `vitalik.eth`, similar to a domain name. When registering an ENS domain, you can set up a bidirectional mapping between your wallet address and ENS. Allowing users to send tokens to vitalik.eth instead of your wallet address. This makes it more user friendly to share your address with others, as you can just share Joshua.eth instead of some long string of characters that they would need to copy paste. However, this isn't supported naively by the EVM, and it requires integrators such as us to support this.
+ENS is a service that gives your wallet address an easier to read username. They are usually in the format `vitalik.eth`, similar to a domain name. When registering an ENS domain, you can set up a bidirectional mapping between your wallet address and ENS. Allowing users to send tokens to vitalik.eth instead of your wallet address. This makes it more user friendly to share your address with others, as you can just share chase.eth instead of some long string of characters that they would need to copy paste. However, this isn't supported naively by the EVM, and it requires integrators such as us to support this.
 
 ---
 
@@ -866,8 +866,8 @@ background-image: url("https://i.imgur.com/BqF88iw.png")
 ## Thanks for Having Me! :D
 
 - Big thanks to Sam/Daniel/Paul/Will and Imperial College for having me
-- You can contact me at: Joshua@manning.dev with any questions or just generally to chat
+- You can contact me at: chase@manning.dev with any questions or just generally to chat
 
 ???
 
-A big thanks to Sam/Daniel/Paul/Will for having me. You can contact me at: Joshua@manning.dev with any questions or just generally to chat
+A big thanks to Sam/Daniel/Paul/Will for having me. You can contact me at: chase@manning.dev with any questions or just generally to chat

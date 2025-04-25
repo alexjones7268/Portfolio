@@ -1,13 +1,13 @@
-![image](https://github.com/smile101603/personal-website/blob/main/src/screen.jpg)
+![image](https://user-images.githubusercontent.com/53957795/147169237-fc6b2658-7d7f-4d02-b75e-dcf06f5e6b93.png)
 
 ## About
 
-This repo is for [the website of Jo](https://smile101603.vercel).  
+This repo is for [the website of Chase Manning](https://chase.manning.dev).  
 This site is built using React, everyone's favourite web development framework!
 
 ## Contributing
 
-If you are interested in contributing, please check out the [Contribution Guide](https://github.com/smile101603/Personal-Website/blob/master/.github/CONTRIBUTING.md).
+If you are interested in contributing, please check out the [Contribution Guide](https://github.com/chase-manning/Personal-Website/blob/master/.github/CONTRIBUTING.md).
 
 ## Running Locally
 

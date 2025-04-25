@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import DirectionsCarRounded from "@material-ui/icons/DirectionsCarRounded";
-import Telegram from "@material-ui/icons/Telegram";
+import InstagramIcon from "@material-ui/icons/Instagram";
+
 import Social from "./Social";
 
 const StyledSocials = styled.div`
@@ -18,23 +20,23 @@ const Socials = () => {
     <StyledSocials>
       <Social
         icon={<GitHubIcon fontSize="inherit" />}
-        link="https://github.com/smile101603"
+        link="https://github.com/chase-manning"
         text="GitHub"
       />
       <Social
-        icon={<Telegram fontSize="inherit" />}
-        link="https://t.me/sunstar987"
-        text="Telegram"
+        icon={<TwitterIcon fontSize="inherit" />}
+        link="https://twitter.com/chase_manning_"
+        text="Twitter"
       />
-      {/* <Social
-        icon={<LinkedInIcon fontSize="inherit" />}
-        link="https://www.linkedin.com/in/smile101603"
-        text="linked in"
-      /> */}
       <Social
-        icon={<DirectionsCarRounded fontSize="inherit" />}
-        link="https://discord.com/users/sunstar7077"
-        text="Discord"
+        icon={<LinkedInIcon fontSize="inherit" />}
+        link="https://www.linkedin.com/in/chasemanning"
+        text="Linked In"
+      />
+      <Social
+        icon={<InstagramIcon fontSize="inherit" />}
+        link="https://www.instagram.com/chase.manning.nz"
+        text="Instagram"
       />
     </StyledSocials>
   );

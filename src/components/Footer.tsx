@@ -248,7 +248,7 @@ const Footer = () => {
           </NavItems>
         </TopSection>
         <BottomSection>
-          {/* <DesignBy>
+          <DesignBy>
             Design by:{" "}
             <DesignedByLink
               href="https://dribbble.com/tranmautritam"
@@ -257,7 +257,7 @@ const Footer = () => {
             >
               Tran Mau Tri Tam
             </DesignedByLink>
-          </DesignBy> */}
+          </DesignBy>
           <BackToTop to="home-scroll" spy smooth duration={2000}>
             Back to top
           </BackToTop>

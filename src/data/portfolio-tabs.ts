@@ -170,7 +170,7 @@ const portfolioTabs: TabType[] = [
           "A project boilerplate create react app template for creating EVM dapps.",
 
         image: dapp,
-        link: "https://github.com/smile101603/cra-template-dapp",
+        link: "https://github.com/chase-manning/cra-template-dapp",
       },
     ],
   },
