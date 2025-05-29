@@ -75,7 +75,7 @@ const HeroContent = ({ scrollPercent }: Props) => {
     <StyledHeroContent>
       <LineHeader text="Maksym" />
       <Header>
-        Hi, I am Maksym, Web-friendly developer with a talent for writing clean code.
+        Hi, I am Maksym, Web-friendly developer with a talent for writing code.
       </Header>
       <WhiteSquare
         src={whiteSquare}
