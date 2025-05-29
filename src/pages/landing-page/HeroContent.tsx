@@ -27,9 +27,9 @@ const StyledHeroContent = styled.div`
 `;
 
 const Header = styled.h2`
-  font-weight: 600;
+  font-weight: 500;
 
-  font-size: 70px;
+  font-size: 60px;
   line-height: 1.2;
   @media only screen and (max-width: 1400px) {
     font-size: 56px;
@@ -73,10 +73,8 @@ interface Props {
 const HeroContent = ({ scrollPercent }: Props) => {
   return (
     <StyledHeroContent>
-      <LineHeader text="Maksym" />
-      <Header>
-        Hi, I am Maksym, Web-friendly developer with a talent for writing code.
-      </Header>
+      <LineHeader text="MAKSYM MUSII" />
+      <Header>Hi, I am Maksym, your Friendly Neighborhood Developer.</Header>
       <WhiteSquare
         src={whiteSquare}
         style={{

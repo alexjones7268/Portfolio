@@ -222,7 +222,9 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            I'm a developer living in London, building DeFi and NFT products.
+            I'm a full-stack developer specializing in AI, automation, and
+            blockchain - building scalable web apps, smart contracts, and
+            automated workflows.
           </Description>
         </TopSection>
         <Bold>Check out my work.</Bold>
