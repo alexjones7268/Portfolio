@@ -2,7 +2,7 @@
 
 ## About
 
-<!-- This repo is for [the website of Maksym](https://Maksym-Portfolio.vercel.app).   -->
+<!-- This repo is for [the website of Maksym](https://maksym-musii.vercel.app).   -->
 This site is built using React, everyone's favourite web development framework!
 
 <!-- ## Contributing

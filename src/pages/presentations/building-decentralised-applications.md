@@ -866,8 +866,8 @@ background-image: url("https://i.imgur.com/BqF88iw.png")
 ## Thanks for Having Me! :D
 
 - Big thanks to Sam/Daniel/Paul/Will and Imperial College for having me
-- You can contact me at: Maksym-Portfolio.vercel.app with any questions or just generally to chat
+- You can contact me at: maksym-musii.vercel.app with any questions or just generally to chat
 
 ???
 
-A big thanks to Sam/Daniel/Paul/Will for having me. You can contact me at: Maksym-Portfolio.vercel.app with any questions or just generally to chat
+A big thanks to Sam/Daniel/Paul/Will for having me. You can contact me at: maksym-musii.vercel.app with any questions or just generally to chat
