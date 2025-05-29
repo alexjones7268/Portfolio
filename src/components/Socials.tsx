@@ -18,7 +18,7 @@ const Socials = () => {
     <StyledSocials>
       <Social
         icon={<GitHubIcon fontSize="inherit" />}
-        link="https://github.com/smile101603"
+        link="https://github.com/CloudDev777"
         text="GitHub"
       />
       <Social

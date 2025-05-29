@@ -198,15 +198,17 @@ const AboutMe = () => {
         <PinkSquare
           src={pinkSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 100 : 200
-              }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${
+              isMobile ? 100 : 200
+            }px))`,
           }}
         />
         <WhiteSquare
           src={whiteSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 200 : 400
-              }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${
+              isMobile ? 200 : 400
+            }px))`,
           }}
         />
         <BlurredSquare
@@ -229,7 +231,7 @@ const AboutMe = () => {
           <Button
             onClick={() =>
               (window as any)
-                .open("https://github.com/smile101603", "_blank")
+                .open("https://github.com/CloudDev777", "_blank")
                 .focus()
             }
           >
