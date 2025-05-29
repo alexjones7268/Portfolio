@@ -53,7 +53,7 @@ const Description = styled.p`
   line-height: 1.3333;
   font-weight: 600;
 
-  font-size: 42px;
+  font-size: 60px;
   max-width: 850px;
   @media only screen and (max-width: 1400px) {
     font-size: 32px;
@@ -198,17 +198,15 @@ const AboutMe = () => {
         <PinkSquare
           src={pinkSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 100 : 200
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 100 : 200
+              }px))`,
           }}
         />
         <WhiteSquare
           src={whiteSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 200 : 400
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 200 : 400
+              }px))`,
           }}
         />
         <BlurredSquare
@@ -227,7 +225,6 @@ const AboutMe = () => {
             automated workflows.
           </Description>
         </TopSection>
-        <Bold>Check out my work.</Bold>
         <div>
           <Button
             onClick={() =>
