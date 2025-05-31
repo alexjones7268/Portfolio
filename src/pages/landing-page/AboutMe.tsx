@@ -222,8 +222,8 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            I'm a full-stack developer specializing in AI, automation, and
-            blockchain - building scalable web apps, smart contracts, and
+            I'm a full-stack developer specializing in Automation, AI, and
+            Blockchain - building scalable web apps, smart contracts, and
             automated workflows.
           </Description>
         </TopSection>
