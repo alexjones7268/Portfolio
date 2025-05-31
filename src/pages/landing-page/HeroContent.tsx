@@ -27,9 +27,9 @@ const StyledHeroContent = styled.div`
 `;
 
 const Header = styled.h2`
-  font-weight: 600;
+  font-weight: 700;
 
-  font-size: 70px;
+  font-size: 80px;
   line-height: 1.2;
   @media only screen and (max-width: 1400px) {
     font-size: 56px;
