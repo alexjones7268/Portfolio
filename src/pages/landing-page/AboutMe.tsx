@@ -198,17 +198,15 @@ const AboutMe = () => {
         <PinkSquare
           src={pinkSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 100 : 200
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 100 : 200
+              }px))`,
           }}
         />
         <WhiteSquare
           src={whiteSquare}
           style={{
-            transform: `translateY(calc(${scrollPercent} * -${
-              isMobile ? 200 : 400
-            }px))`,
+            transform: `translateY(calc(${scrollPercent} * -${isMobile ? 200 : 400
+              }px))`,
           }}
         />
         <BlurredSquare
@@ -222,9 +220,9 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            I'm a full-stack developer specializing in Automation, AI, and
-            Blockchain - building scalable web apps, smart contracts, and
-            automated workflows.
+            Full-stack developer specializing in Automation, AI, and Blockchain
+            - building scalable web apps, automated workflows, and smart
+            contracts.
           </Description>
         </TopSection>
         <div>
