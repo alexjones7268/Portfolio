@@ -220,9 +220,9 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            Full-stack developer specializing in Automation, AI, and Blockchain
-            - building scalable web apps, automated workflows, and smart
-            contracts.
+            Full-stack & eCommerce developer specializing in Automation, AI, and
+            Blockchain - building scalable web apps, automated workflows, and
+            smart contracts.
           </Description>
         </TopSection>
         <div>
