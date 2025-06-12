@@ -255,7 +255,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Tran Mau Tri Tam
+              Maksym Musii
             </DesignedByLink>
           </DesignBy>
           <BackToTop to="home-scroll" spy smooth duration={2000}>

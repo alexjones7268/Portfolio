@@ -1,7 +1,7 @@
+import { SiLinkedin, SiDiscord } from "react-icons/si";
 import styled from "styled-components";
 import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { AddToHomeScreen } from "@material-ui/icons";
 import Social from "./Social";
 
 const StyledSocials = styled.div`
@@ -22,13 +22,18 @@ const Socials = () => {
         text="GitHub"
       />
       <Social
+        icon={<SiLinkedin />}
+        link="https://www.linkedin.com/in/maksym-musii/"
+        text="LinkedIn"
+      />
+      <Social
         icon={<Telegram fontSize="inherit" />}
         link="https://t.me/sunstar987"
         text="Telegram"
       />
       <Social
-        icon={<AddToHomeScreen fontSize="inherit" />}
-        link="https://discord.com/users/sunstar7077"
+        icon={<SiDiscord fontSize="inherit" />}
+        link="https://discord.com/users/sunstar987"
         text="Discord"
       />
     </StyledSocials>
