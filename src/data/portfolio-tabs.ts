@@ -25,6 +25,46 @@ export interface TabType {
 
 const portfolioTabs: TabType[] = [
   {
+    label: "Web2",
+    projects: [
+      {
+        name: "State Insurance",
+        description:
+          "State Insurance protects over 400,000 New Zealanders. Recipient of Reader's Digest Trusted Brand Award.",
+        image: state,
+        link: "https://business.state.co.nz/",
+      },
+      {
+        name: "AMI Insurance",
+        description:
+          "AMI is one of New Zealand's most trusted insurers, receiving the trusted Brand award for eight years running.",
+        image: ami,
+        link: "https://business.ami.co.nz/",
+      },
+      {
+        name: "Site Connect",
+        description:
+          "New Zealand's leading site management & health and safety system for construction and property management.",
+        image: sitesoft,
+        link: "https://sitesoft.com/",
+      },
+      {
+        name: "Orcon Power",
+        description:
+          "From broadband to power and mobile plans, Orcon offers a range of services to make your life simpler, easier & faster.",
+        image: orcon,
+        link: "https://www.orcon.net.nz/power",
+      },
+      {
+        name: "Slingshot Power",
+        description:
+          "Slingshot is the fourth largest telecommunications company in New Zealand that bundles power into a single plan.",
+        image: slingshot,
+        link: "https://www.slingshot.co.nz/power",
+      },
+    ],
+  },
+  {
     label: "Web3",
     projects: [
       {
@@ -96,46 +136,6 @@ const portfolioTabs: TabType[] = [
           "Waifusion is a set of 16,384 uniquely generated, anime inspired, digital waifu NFT collectibles on Ethereum and Binance Smart Chain.",
         image: waifusion,
         link: "https://waifusion.io/",
-      },
-    ],
-  },
-  {
-    label: "Web2",
-    projects: [
-      {
-        name: "State Insurance",
-        description:
-          "State Insurance protects over 400,000 New Zealanders. Recipient of Reader's Digest Trusted Brand Award.",
-        image: state,
-        link: "https://business.state.co.nz/",
-      },
-      {
-        name: "AMI Insurance",
-        description:
-          "AMI is one of New Zealand's most trusted insurers, receiving the trusted Brand award for eight years running.",
-        image: ami,
-        link: "https://business.ami.co.nz/",
-      },
-      {
-        name: "Site Connect",
-        description:
-          "New Zealand's leading site management & health and safety system for construction and property management.",
-        image: sitesoft,
-        link: "https://sitesoft.com/",
-      },
-      {
-        name: "Orcon Power",
-        description:
-          "From broadband to power and mobile plans, Orcon offers a range of services to make your life simpler, easier & faster.",
-        image: orcon,
-        link: "https://www.orcon.net.nz/power",
-      },
-      {
-        name: "Slingshot Power",
-        description:
-          "Slingshot is the fourth largest telecommunications company in New Zealand that bundles power into a single plan.",
-        image: slingshot,
-        link: "https://www.slingshot.co.nz/power",
       },
     ],
   },
