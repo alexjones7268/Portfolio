@@ -1,3 +1,36 @@
+import { GrMysql } from "react-icons/gr";
+import {
+  SiPostgresql,
+  SiMongodb,
+  SiSupabase,
+  SiGodaddy,
+  SiCpanel,
+  SiFirebase,
+  SiCivicrm,
+  SiGraphql,
+  SiOpenai,
+  SiFastapi,
+  SiFlask,
+  SiPython,
+  SiAsana,
+  SiTrello,
+  SiCloudflare,
+  SiLaravel,
+  SiDjango,
+  SiBootstrap,
+  SiChakraui,
+  SiNextdotjs,
+  SiAngular,
+  SiTailwindcss,
+  SiN8N,
+  SiMake,
+} from "react-icons/si";
+import { FaAws, FaDocker, FaNode, FaShopify, FaReact } from "react-icons/fa";
+import { TbWebhook, TbBrandZapier } from "react-icons/tb";
+import { CgMonday } from "react-icons/cg";
+import { AiFillGithub } from "react-icons/ai";
+import { BsPaypal, BsStripe, BsWordpress } from "react-icons/bs";
+import { RiVuejsFill } from "react-icons/ri";
 import { useRef } from "react";
 import styled from "styled-components";
 
@@ -91,12 +124,14 @@ const StyledWhatIDo = styled.div`
 `;
 
 const Content = styled.div`
+  margin-left: -160px;
+  margin-top: -200px;
   position: relative;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 570px;
+  max-width: 870px;
 `;
 
 const TextContent = styled.div`
@@ -107,7 +142,7 @@ const TextContent = styled.div`
 
 const LightCube = styled.img`
   position: absolute;
-  top: -55%;
+  top: -35%;
   left: 0%;
   width: 16%;
   transition: all 0.2s;
@@ -164,7 +199,7 @@ const WhatIDo = () => {
       <WhatIDoIllustration scrollPercent={scrollPercent} />
       <Content>
         <div />
-        <TextContent>
+        <TextContent style={{ marginTop: "200px" }}>
           <LightCube
             src={lightBlueCube}
             style={{
@@ -172,12 +207,58 @@ const WhatIDo = () => {
             }}
           />
           <LineHeader pink text="What I do" />
-          <Bold>I love creating beautiful user experiences.</Bold>
+          {/* <Bold>I love creating beautiful user experiences.</Bold>
           <Smaller>
             Most of my development experience and interest is in React front end
             development. More recently I have also been using Solidity to write
             smart contracts on Ethereum.
-          </Smaller>
+          </Smaller> */}
+          <div style={{ display: "flex", gap: "20px", marginBottom: "50px" }}>
+            <FaReact style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiNextdotjs style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiAngular style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <RiVuejsFill style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiChakraui style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiBootstrap style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiTailwindcss style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <FaNode style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiDjango style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiLaravel style={{ fontSize: "90px", color: "#61DAFB" }} />
+          </div>
+          <div style={{ display: "flex", gap: "20px", marginBottom: "50px" }}>
+            <FaShopify style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <BsWordpress style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <BsStripe style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <BsPaypal style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <AiFillGithub style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiGraphql style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiMongodb style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiPostgresql style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <GrMysql style={{ fontSize: "90px", color: "#61DAFB" }} />
+          </div>
+          <div style={{ display: "flex", gap: "20px", marginBottom: "50px" }}>
+            <TbBrandZapier style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiN8N style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiMake style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiPython style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiFlask style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiFastapi style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiOpenai style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiCivicrm style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <TbWebhook style={{ fontSize: "90px", color: "#61DAFB" }} />
+          </div>
+          <div style={{ display: "flex", gap: "20px", marginBottom: "50px" }}>
+            <SiFirebase style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiSupabase style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <FaAws style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <FaDocker style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiCloudflare style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiCpanel style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiGodaddy style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <CgMonday style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiTrello style={{ fontSize: "90px", color: "#61DAFB" }} />
+            <SiAsana style={{ fontSize: "90px", color: "#61DAFB" }} />
+          </div>
         </TextContent>
         <ScrollDownContainer>
           <ScrollDown target="portfolio-scroll" white />

@@ -3,6 +3,7 @@ import LogoIcon from "./LogoIcon";
 
 const StyledLogo = styled.div`
   display: flex;
+  margin-left: 60px;
   align-items: center;
   z-index: 1;
   height: 40px;

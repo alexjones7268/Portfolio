@@ -8,7 +8,7 @@ const StyledHeroContent = styled.div`
   display: flex;
   flex-direction: column;
 
-  width: 600px;
+  width: 700px;
   margin-left: 15%;
   @media only screen and (max-width: 1550px) {
     margin-left: 10%;
@@ -27,10 +27,10 @@ const StyledHeroContent = styled.div`
 `;
 
 const Header = styled.h2`
-  font-weight: 700;
+  font-weight: 600;
 
-  font-size: 80px;
-  line-height: 1.2;
+  font-size: 75px;
+  line-height: 1.4;
   @media only screen and (max-width: 1400px) {
     font-size: 56px;
     line-height: 1.3;

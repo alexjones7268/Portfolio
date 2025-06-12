@@ -68,6 +68,7 @@ const Content = styled.div`
   left: 0;
   width: 100%;
   display: flex;
+  margin-left: -60px;
   flex-direction: column;
   justify-content: space-between;
 

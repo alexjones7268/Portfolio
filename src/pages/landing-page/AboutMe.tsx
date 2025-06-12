@@ -38,6 +38,7 @@ const StyledAboutMe = styled.div`
 
 const Content = styled.div`
   position: relative;
+  margin-left: -60px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -53,7 +54,7 @@ const Description = styled.p`
   line-height: 1.3333;
   font-weight: 600;
 
-  font-size: 60px;
+  font-size: 30px;
   max-width: 850px;
   @media only screen and (max-width: 1400px) {
     font-size: 32px;
@@ -222,10 +223,11 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            Full-stack & eCommerce developer specializing in Automation, AI, and
-            Blockchain - building scalable web apps, automated workflows, and
-            smart contracts.
+            Full stack & eCommerce | Automatoin & AI | Blockchain Expert -
+            building scalable web apps, automated workflows, and smart
+            contracts.
           </Description>
+          <Bold>Check out my work.</Bold>
         </TopSection>
         <div>
           <Button
