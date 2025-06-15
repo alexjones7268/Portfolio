@@ -51,7 +51,7 @@ const StyledWhatIDo = styled.div`
 
   height: 100vh;
   @media only screen and (max-width: 1400px) {
-    height: 80vh;
+    height: 100vh;
   }
   @media only screen and (max-width: 639px) {
     height: auto;
@@ -63,13 +63,13 @@ const StyledWhatIDo = styled.div`
     padding-left: calc(10% + 60px);
   }
   @media only screen and (max-width: 1450px) {
-    padding-left: calc(5% + 35px);
+    padding-left: calc(5% + 135px);
   }
   @media only screen and (max-width: 639px) {
     padding-left: 0;
   }
   @media only screen and (max-width: 639px) {
-    padding: 60px 30px;
+    padding: 60px 130px;
   }
 
   ::before {

@@ -77,11 +77,11 @@ const Content = styled.div`
   height: 100%;
   @media only screen and (max-width: 1400px) {
     position: relative;
-    padding: 30px 35px;
+    padding: 30px 115px;
   }
   @media only screen and (max-width: 639px) {
     position: relative;
-    padding: 30px;
+    padding: 130px;
     height: auto;
   }
 `;

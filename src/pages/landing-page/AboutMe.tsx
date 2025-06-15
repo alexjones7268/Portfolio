@@ -29,10 +29,10 @@ const StyledAboutMe = styled.div`
     padding-left: calc(10% + 60px);
   }
   @media only screen and (max-width: 1450px) {
-    padding-left: calc(5% + 35px);
+    padding-left: calc(5% + 115px);
   }
   @media only screen and (max-width: 639px) {
-    padding: 60px 30px;
+    padding: 60px 130px;
   }
 `;
 
