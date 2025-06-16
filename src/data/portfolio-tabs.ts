@@ -27,7 +27,7 @@ export interface TabType {
 
 const portfolioTabs: TabType[] = [
   {
-    label: "Full Stack",
+    label: "Web ",
     projects: [
       {
         name: "AI Chat and Imagegeneration",
