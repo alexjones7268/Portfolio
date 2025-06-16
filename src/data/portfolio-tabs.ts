@@ -11,12 +11,14 @@ import state from "../assets/projects/state.jpg";
 import sitesoft from "../assets/projects/sitesoft.jpg";
 import slingshot from "../assets/projects/slingshot.jpg";
 import orcon from "../assets/projects/orcon.jpg";
-import dateformat from "../assets/projects/dateformat.jpg";
-import dapp from "../assets/projects/dapp-template.jpg";
+import Google_OtherPlatform_integration_Automation from "../assets/projects/Google_OtherPlatform_integration_Automation.jpg";
+import AI_Powered_Data_Enrichment_System from "../assets/projects/AI_Powered_Data_Enrichment_System.jpg";
+import Gmail_GPT_Automation from "../assets/projects/Gmail_GPT_Automation.jpg";
 import debtFarming from "../assets/projects/debt-farming.jpg";
 import akula from "../assets/projects/akula.jpg";
-import gummy from "../assets/projects/gummy.jpg";
 import tlx from "../assets/projects/tlx.jpg";
+import infinify from "../assets/projects/infinify.jpg";
+import vue_dashboard from "../assets/projects/vue_dashboard.jpg";
 
 export interface TabType {
   label: string;
@@ -25,8 +27,22 @@ export interface TabType {
 
 const portfolioTabs: TabType[] = [
   {
-    label: "Web2",
+    label: "Full Stack",
     projects: [
+      {
+        name: "AI Chat and Imagegeneration",
+        description:
+          "About Infinify (public ver.) is an AI-powered SaaS application that lets you enjoy various features such as AI chat, image generation, image editing, and more | Next.js, React, Tailwind CSS, Typescript, Clerk, mongodb, shadcn/ui, Stripe",
+        image: infinify,
+        link: "https://github.com/CloudDev777/AI_Chat_Image_generation",
+      },
+      {
+        name: "Vue Admin Dashboard",
+        description:
+          "Vue Material Admin Template is a Vue Based Material Design Admin Template. And use Vuetifyjs as base framework. Vuetify is Awesome.",
+        image: vue_dashboard,
+        link: "https://github.com/CloudDev777/Vue_Material_Admin_Dashboard",
+      },
       {
         name: "State Insurance",
         description:
@@ -61,6 +77,32 @@ const portfolioTabs: TabType[] = [
           "Slingshot is the fourth largest telecommunications company in New Zealand that bundles power into a single plan.",
         image: slingshot,
         link: "https://www.slingshot.co.nz/power",
+      },
+    ],
+  },
+  {
+    label: "Automation",
+    projects: [
+      {
+        name: "Google_OtherPlatform\n_Integration_Automation",
+        description:
+          "This project is a clone of Zapier, featuring integrations with Google services like Drive, Gmail, and Sheets, allowing for seamless automation across these platforms. It also includes a GitHub comment integration, enabling workflows that automate tasks based on GitHub activity.",
+        image: Google_OtherPlatform_integration_Automation,
+        link: "https://github.com/CloudDev777/Google_OtherPlatform_integration_Automation",
+      },
+      {
+        name: "AI-Powered-Data-Enrichment-System",
+        description:
+          "An intelligent pipeline that automates lead generation and contextual enrichment from raw CSV data. Real-time keyword filtering via SerpAPI, Contextual data tagging using Groq’s LLaMA3-powered LLM CRM-ready CSV outputs with seamless export support",
+        image: AI_Powered_Data_Enrichment_System,
+        link: "https://github.com/CloudDev777/Google_OtherPlatform_integration_Automation",
+      },
+      {
+        name: "Gmail_GPT_Automation",
+        description:
+          "FastAPI Web Service API with OpenAI integration. Send Gmail data via Zapier webhook & get customized output using OpenAI API. Fast, efficient, and AI-powered automation. Explore AI-driven possibilities now! #FastAPI #OpenAI #AI-Automation",
+        image: Gmail_GPT_Automation,
+        link: "https://github.com/CloudDev777/Gmail_GPT_automation",
       },
     ],
   },
@@ -136,33 +178,6 @@ const portfolioTabs: TabType[] = [
           "Waifusion is a set of 16,384 uniquely generated, anime inspired, digital waifu NFT collectibles on Ethereum and Binance Smart Chain.",
         image: waifusion,
         link: "https://waifusion.io/",
-      },
-    ],
-  },
-  {
-    label: "Other",
-    projects: [
-      {
-        name: "Dateformat",
-        description:
-          "The fastest, and most popular javascript date formatting library on npm.",
-        image: dateformat,
-        link: "https://github.com/felixge/node-dateformat",
-      },
-      {
-        name: "Gummy Dashboard",
-        description:
-          "A simple and free dashboard for displaying your favourite sites using iframes",
-        image: gummy,
-        link: "https://gummy-a10e0.web.app/",
-      },
-      {
-        name: "Dapp CRA Template",
-        description:
-          "A project boilerplate create react app template for creating EVM dapps.",
-
-        image: dapp,
-        link: "https://github.com/chase-manning/cra-template-dapp",
       },
     ],
   },

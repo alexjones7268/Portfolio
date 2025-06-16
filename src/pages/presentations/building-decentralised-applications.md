@@ -66,7 +66,7 @@ Give a simple example, such as a TODO app
 
 ## Differences between DApps and Apps
 
-#### App (Web2):
+#### App (Web):
 
 - Client <-> server architecture
 - DB is private and both reads/writes have access control
