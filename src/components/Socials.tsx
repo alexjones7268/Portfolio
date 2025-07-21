@@ -1,4 +1,3 @@
-import { SiLinkedin, SiDiscord } from "react-icons/si";
 import styled from "styled-components";
 import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -20,11 +19,6 @@ const Socials = () => {
         icon={<GitHubIcon fontSize="inherit" />}
         link="https://github.com/CloudDev777"
         text="GitHub"
-      />
-      <Social
-        icon={<SiLinkedin />}
-        link="https://www.linkedin.com/in/maksym-musii/"
-        text="LinkedIn"
       />
       <Social
         icon={<Telegram fontSize="inherit" />}
