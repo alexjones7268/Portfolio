@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import { SiDiscord } from "react-icons/si";
 import Social from "./Social";
 
 const StyledSocials = styled.div`

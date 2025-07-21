@@ -1,5 +1,4 @@
 import { ProjectType } from "../pages/landing-page/Project";
-import backd from "../assets/projects/backd.jpg";
 import uwucrew from "../assets/projects/uwucrew.jpg";
 import aiko from "../assets/projects/aiko.jpg";
 import waifusion from "../assets/projects/waifusion.jpg";
@@ -95,7 +94,7 @@ const portfolioTabs: TabType[] = [
         description:
           "An intelligent pipeline that automates lead generation and contextual enrichment from raw CSV data. Real-time keyword filtering via SerpAPI, Contextual data tagging using Groq’s LLaMA3-powered LLM CRM-ready CSV outputs with seamless export support",
         image: AI_Powered_Data_Enrichment_System,
-        link: "https://github.com/CloudDev777/Google_OtherPlatform_integration_Automation",
+        link: "https://github.com/Maksym-TopDev/AI-Powered-Data-Enrichment-System",
       },
       {
         name: "Gmail_GPT_Automation",
@@ -115,13 +114,6 @@ const portfolioTabs: TabType[] = [
           "TLX provides leveraged tokens for over 50 assets with up to 20x leverage, powered by Synthetix, on the Optimism blockchain.",
         image: tlx,
         link: "https://tlx.fi/",
-      },
-      {
-        name: "Mero Finance",
-        description:
-          "The DeFi protocol for increasing the yield and utility of your crypto assets with reactive liquidity.",
-        image: backd,
-        link: "https://mero.finance/",
       },
       {
         name: "Crypto Capsule",
