@@ -1,3 +1,4 @@
+import { BsWhatsapp } from "react-icons/bs"; 
 import styled from "styled-components";
 import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -20,6 +21,11 @@ const Socials = () => {
         icon={<GitHubIcon fontSize="inherit" />}
         link="https://github.com/CloudDev777"
         text="GitHub"
+      />
+      <Social
+        icon={<BsWhatsapp fontSize="inherit" />}
+        link="https://wa.me/+12024279250"
+        text="WhatsApp"
       />
       <Social
         icon={<Telegram fontSize="inherit" />}
