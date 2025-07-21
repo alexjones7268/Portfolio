@@ -1,4 +1,4 @@
-import { BsWhatsapp } from "react-icons/bs"; 
+import { BsWhatsapp } from "react-icons/bs";
 import styled from "styled-components";
 import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
