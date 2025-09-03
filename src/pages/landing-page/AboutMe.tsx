@@ -223,9 +223,8 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            Full stack & eCommerce | Automatoin & AI | Blockchain Expert -
-            building scalable web apps, automated workflows, and smart
-            contracts.
+            Full Stack & AI & Automatoin Developer - building scalable web apps,
+            workflows, and smart contracts.
           </Description>
           <Bold>Check out my work.</Bold>
         </TopSection>
@@ -233,7 +232,7 @@ const AboutMe = () => {
           <Button
             onClick={() =>
               (window as any)
-                .open("https://github.com/CloudDev777", "_blank")
+                .open("https://github.com/Maksym-TopDev", "_blank")
                 .focus()
             }
           >
