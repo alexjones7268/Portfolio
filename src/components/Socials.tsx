@@ -19,12 +19,12 @@ const Socials = () => {
     <StyledSocials>
       <Social
         icon={<GitHubIcon fontSize="inherit" />}
-        link="https://github.com/CloudDev777"
+        link="https://github.com/Maksym-TopDev"
         text="GitHub"
       />
       <Social
         icon={<BsWhatsapp fontSize="inherit" />}
-        link="https://wa.me/+12024279250"
+        link="https://wa.me/+1(979)326-8076"
         text="WhatsApp"
       />
       <Social
@@ -34,7 +34,7 @@ const Socials = () => {
       />
       <Social
         icon={<SiDiscord fontSize="inherit" />}
-        link="https://discord.com/users/sunstar987"
+        link="https://discord.com/users/cloud_dev000"
         text="Discord"
       />
     </StyledSocials>
