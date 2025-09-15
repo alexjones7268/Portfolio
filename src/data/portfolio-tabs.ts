@@ -111,6 +111,13 @@ const portfolioTabs: TabType[] = [
         link: "https://www.loom.com/share/4e5e3a627e7c4f678fa4c5af50cd0548?sid=064afec8-e813-42c4-9962-c3472f258849",
       },
       {
+        name: "Google_OtherPlatform\n_Integration_Automation",
+        description:
+          "This project is a clone of Zapier, featuring integrations with Google services like Drive, Gmail, and Sheets, allowing for seamless automation across these platforms. It also includes a GitHub comment integration, enabling workflows that automate tasks based on GitHub activity.",
+        image: Google_OtherPlatform_integration_Automation,
+        link: "https://github.com/Maksym-TopDev/Google_OtherPlatform_integration_Automation",
+      },
+      {
         name: "Automated Multi-Store Price Tracker with Make.com, Apify & AI Vision",
         description:
           "Developed an automated price comparison system using Make.com that intelligently searches products across major e-commerce stores – even those with complex URL structures or anti-bot measures. The solution leverages Apify for screenshot capture and OpenAI's image recognition to accurately extract prices, delivering structured data to Google Sheets for actionable insights. Ideal for retailers, dropshippers, and procurement teams needing real-time competitor pricing.",
@@ -123,13 +130,6 @@ const portfolioTabs: TabType[] = [
           "Automated Invoice Generation – FreshBooks triggers invoice creation in QuickBooks when a new client is added in Airtable. Expense Tracking Sync – Expenses logged in Airtable automatically update in both FreshBooks and QuickBooks. Client Database Management – New clients in FreshBooks are added to Airtable for CRM tracking.",
         image: Zapier_FreshBooks,
         link: "",
-      },
-      {
-        name: "Google_OtherPlatform\n_Integration_Automation",
-        description:
-          "This project is a clone of Zapier, featuring integrations with Google services like Drive, Gmail, and Sheets, allowing for seamless automation across these platforms. It also includes a GitHub comment integration, enabling workflows that automate tasks based on GitHub activity.",
-        image: Google_OtherPlatform_integration_Automation,
-        link: "https://github.com/Maksym-TopDev/Google_OtherPlatform_integration_Automation",
       },
       {
         name: "AI-Powered-Data-Enrichment-System",
