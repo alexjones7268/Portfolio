@@ -13,6 +13,13 @@ import orcon from "../assets/projects/orcon.jpg";
 import Google_OtherPlatform_integration_Automation from "../assets/projects/Google_OtherPlatform_integration_Automation.jpg";
 import AI_Powered_Data_Enrichment_System from "../assets/projects/AI_Powered_Data_Enrichment_System.jpg";
 import Gmail_GPT_Automation from "../assets/projects/Gmail_GPT_Automation.jpg";
+import Power_Automate from "../assets/projects/Power_Automate.jpg";
+import Ecommerce_Car from "../assets/projects/Ecommerce_Car.jpg";
+import B2B_Order_Management_System from "../assets/projects/B2B_Order_Management_System.jpg";
+import Blog_Post_Make from "../assets/projects/Blog_Post_Make.jpg";
+import Hubspot_report from "../assets/projects/Hubspot_report.jpg";
+import vehicle_Google_Drvie_Google_sheets from "../assets/projects/vehicle_Google_Drvie_Google_sheets.jpg";
+import Zapier_FreshBooks from "../assets/projects/Zapier_FreshBooks.jpg";
 import debtFarming from "../assets/projects/debt-farming.jpg";
 import akula from "../assets/projects/akula.jpg";
 import tlx from "../assets/projects/tlx.jpg";
@@ -28,6 +35,20 @@ const portfolioTabs: TabType[] = [
   {
     label: "Web ",
     projects: [
+      {
+        name: "Lotus Dealership - Shopify, React, AWS, Node.js, Express, MongoDB",
+        description:
+          "Lotus of Vancouver is your local Lotus dealership in Vancouver, BC. Browse new and used Lotus cars online, schedule service, order genuine parts, and more.",
+        image: Ecommerce_Car,
+        link: "https://www.lotusvancouver.com/",
+      },
+      {
+        name: "Order Management System - B2B, React, Next, HubSpot, Widget",
+        description:
+          "Offers fulfillment, warehousing, and transportation for DTC and B2B, plus the integrated software you need to provide your end consumers with the best pre-purchase and post-delivery consumer experience.",
+        image: B2B_Order_Management_System,
+        link: "https://www.stord.com/",
+      },
       {
         name: "AI Chat and Imagegeneration",
         description:
@@ -83,6 +104,27 @@ const portfolioTabs: TabType[] = [
     label: "Automation",
     projects: [
       {
+        name: "Power Automate & SerpAPI & EAN API & ChatGPT API & Office Script",
+        description:
+          "- Using Excel Office Script to get product names, GTINs, and brands from Excel Online.\n - Extracting the country of origin(gl code) of a product using the EAN API.\n - Using SerpAPI, obtain the product ID and search the Google Shopping site to get the corresponding product link.\n - AI-Powered Summary - ChatGPT API extract product details from product links.\n - JSON/XML Parsing - Processing structured data for analysis.\n - Store scraped product details back in Excel Online using Office Script.",
+        image: Power_Automate,
+        link: "https://www.loom.com/share/4e5e3a627e7c4f678fa4c5af50cd0548?sid=064afec8-e813-42c4-9962-c3472f258849",
+      },
+      {
+        name: "Automated Multi-Store Price Tracker with Make.com, Apify & AI Vision",
+        description:
+          "Developed an automated price comparison system using Make.com that intelligently searches products across major e-commerce stores – even those with complex URL structures or anti-bot measures. The solution leverages Apify for screenshot capture and OpenAI's image recognition to accurately extract prices, delivering structured data to Google Sheets for actionable insights. Ideal for retailers, dropshippers, and procurement teams needing real-time competitor pricing.",
+        image: Blog_Post_Make,
+        link: "",
+      },
+      {
+        name: "Zapier & FreshBooks & Airtable & QuickBooks Integration",
+        description:
+          "Automated Invoice Generation – FreshBooks triggers invoice creation in QuickBooks when a new client is added in Airtable. Expense Tracking Sync – Expenses logged in Airtable automatically update in both FreshBooks and QuickBooks. Client Database Management – New clients in FreshBooks are added to Airtable for CRM tracking.",
+        image: Zapier_FreshBooks,
+        link: "",
+      },
+      {
         name: "Google_OtherPlatform\n_Integration_Automation",
         description:
           "This project is a clone of Zapier, featuring integrations with Google services like Drive, Gmail, and Sheets, allowing for seamless automation across these platforms. It also includes a GitHub comment integration, enabling workflows that automate tasks based on GitHub activity.",
@@ -95,6 +137,20 @@ const portfolioTabs: TabType[] = [
           "An intelligent pipeline that automates lead generation and contextual enrichment from raw CSV data. Real-time keyword filtering via SerpAPI, Contextual data tagging using Groq’s LLaMA3-powered LLM CRM-ready CSV outputs with seamless export support",
         image: AI_Powered_Data_Enrichment_System,
         link: "https://github.com/Maksym-TopDev/AI-Powered-Data-Enrichment-System",
+      },
+      {
+        name: "N8N | HubSpot CRM Automation: Last Contacted Report + Contact Sync",
+        description:
+          "- Pull Company Data from HubSpot – Extract company names, industries, and last activity dates.\n - Fetch Associated Contacts – For each company, retrieve linked contacts (with emails & roles). \n - Filter & Sort by Last Contact Date – Highlight stale leads needing follow-up. \n - Export to Google Sheets/Outlook mail– Auto-send reports to sales teams or save in a shared spreadsheet.",
+        image: Hubspot_report,
+        link: "",
+      },
+      {
+        name: "N8N | Vehicle Listings with AI Image Analysis & Data Enrichment",
+        description:
+          "This automation takes in a vehicle submission form with basic text info and up to 20 images. It uses AI to analyze, label, and filter the photos, pulls additional vehicle specs from the web, scrapes a brand logo, and formats everything into clean, structured data. \n Structured Output: \n • A labeled and sorted Google Drive folder containing renamed image files. \n • A fully populated Google Sheet with rows containing specifications, features, vehicle overview, and direct image URLs.\n • All data ready to be pushed to a CMS like Framer or any inventory system.",
+        image: vehicle_Google_Drvie_Google_sheets,
+        link: "",
       },
       {
         name: "Gmail_GPT_Automation",
