@@ -1,6 +1,5 @@
 import { BsWhatsapp } from "react-icons/bs";
 import styled from "styled-components";
-import Telegram from "@material-ui/icons/Telegram";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { SiDiscord } from "react-icons/si";
 import Social from "./Social";
@@ -28,13 +27,8 @@ const Socials = () => {
         text="WhatsApp"
       />
       <Social
-        icon={<Telegram fontSize="inherit" />}
-        link="https://t.me/sunstar987"
-        text="Telegram"
-      />
-      <Social
         icon={<SiDiscord fontSize="inherit" />}
-        link="https://discord.com/users/cloud_dev000"
+        link="https://discord.com/users/maksimuss67776"
         text="Discord"
       />
     </StyledSocials>

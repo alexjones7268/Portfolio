@@ -248,16 +248,6 @@ const Footer = () => {
           </NavItems>
         </TopSection>
         <BottomSection>
-          <DesignBy>
-            Design by:{" "}
-            <DesignedByLink
-              href="https://dribbble.com/tranmautritam"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Maksym Musii
-            </DesignedByLink>
-          </DesignBy>
           <BackToTop to="home-scroll" spy smooth duration={2000}>
             Back to top
           </BackToTop>
