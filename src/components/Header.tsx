@@ -54,9 +54,9 @@ const Header = () => {
 
   const handleResumeDownload = () => {
     // Force download of the PDF
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Maksym_Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "Maksym_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -65,32 +65,30 @@ const Header = () => {
   return (
     <StyledHeader>
       {mobile ? (
-        <MobilePopup 
-          open={popupOpen} 
-          close={() => setPopupOpen(false)} 
+        <MobilePopup
+          open={popupOpen}
+          close={() => setPopupOpen(false)}
           onResumeClick={() => {
             handleResumeDownload();
             setPopupOpen(false);
           }}
         />
       ) : (
-        <PopupDesktop 
-          open={popupOpen} 
-          close={() => setPopupOpen(false)} 
+        <PopupDesktop
+          open={popupOpen}
+          close={() => setPopupOpen(false)}
           onResumeClick={() => {
             handleResumeDownload();
             setPopupOpen(false);
           }}
         />
       )}
-      
+
       <LeftSection>
         <Logo primary={mobile || !popupOpen} />
-        <ResumeButton onClick={handleResumeDownload}>
-           Resume
-        </ResumeButton>
+        <ResumeButton onClick={handleResumeDownload}>Resume</ResumeButton>
       </LeftSection>
-      
+
       <RightSection>
         <Hamburger open={popupOpen} click={() => setPopupOpen(!popupOpen)} />
       </RightSection>

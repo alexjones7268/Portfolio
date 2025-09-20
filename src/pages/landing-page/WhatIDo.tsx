@@ -193,7 +193,7 @@ const SkillsContainer = styled.div`
   gap: 30px;
   margin-bottom: 50px;
   justify-content: center;
-  
+
   @media only screen and (max-width: 639px) {
     gap: 20px;
     margin-bottom: 30px;
@@ -206,7 +206,7 @@ const SkillItem = styled.div`
   align-items: center;
   gap: 10px;
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
@@ -221,12 +221,12 @@ const SkillIcon = styled.div`
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   transition: all 0.3s ease;
-  
+
   &:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.1);
   }
-  
+
   @media only screen and (max-width: 639px) {
     width: 60px;
     height: 60px;
@@ -240,11 +240,11 @@ const SkillName = styled.span`
   text-align: center;
   opacity: 0.9;
   transition: opacity 0.3s ease;
-  
+
   &:hover {
     opacity: 1;
   }
-  
+
   @media only screen and (max-width: 639px) {
     font-size: 12px;
   }
@@ -376,7 +376,15 @@ const WhatIDo = () => {
             </SkillItem>
             <SkillItem>
               <SkillIcon>
-                <span style={{ fontSize: "24px", color: "#0078D4", fontWeight: "bold" }}>AZ</span>
+                <span
+                  style={{
+                    fontSize: "24px",
+                    color: "#0078D4",
+                    fontWeight: "bold",
+                  }}
+                >
+                  AZ
+                </span>
               </SkillIcon>
               <SkillName>Azure</SkillName>
             </SkillItem>
@@ -426,7 +434,15 @@ const WhatIDo = () => {
             </SkillItem>
             <SkillItem>
               <SkillIcon>
-                <span style={{ fontSize: "24px", color: "#CC2927", fontWeight: "bold" }}>SQL</span>
+                <span
+                  style={{
+                    fontSize: "24px",
+                    color: "#CC2927",
+                    fontWeight: "bold",
+                  }}
+                >
+                  SQL
+                </span>
               </SkillIcon>
               <SkillName>SQL Server</SkillName>
             </SkillItem>
@@ -446,7 +462,15 @@ const WhatIDo = () => {
             </SkillItem>
             <SkillItem>
               <SkillIcon>
-                <span style={{ fontSize: "24px", color: "#430098", fontWeight: "bold" }}>PC</span>
+                <span
+                  style={{
+                    fontSize: "24px",
+                    color: "#430098",
+                    fontWeight: "bold",
+                  }}
+                >
+                  PC
+                </span>
               </SkillIcon>
               <SkillName>Pinecone</SkillName>
             </SkillItem>

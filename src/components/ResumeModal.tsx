@@ -13,12 +13,12 @@ const ModalOverlay = styled.div<{ isOpen: boolean }>`
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  display: ${props => props.isOpen ? 'flex' : 'none'};
+  display: ${(props) => (props.isOpen ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   z-index: 1000;
   padding: 20px;
-  opacity: ${props => props.isOpen ? '1' : '0'};
+  opacity: ${(props) => (props.isOpen ? "1" : "0")};
   transition: opacity 0.3s ease;
 `;
 
@@ -31,9 +31,9 @@ const ModalContent = styled.div<{ isOpen: boolean }>`
   overflow: hidden;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  transform: ${props => props.isOpen ? 'scale(1)' : 'scale(0.8)'};
+  transform: ${(props) => (props.isOpen ? "scale(1)" : "scale(0.8)")};
   transition: transform 0.3s ease;
-  
+
   @media only screen and (max-width: 768px) {
     width: 95vw;
     max-width: 95vw;
@@ -118,7 +118,7 @@ const PDFViewer = styled.iframe`
   border: none;
   background: white;
   min-height: 600px;
-  
+
   @media only screen and (min-width: 1200px) {
     min-height: 700px;
   }
@@ -228,9 +228,9 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
 
   const handleDownload = () => {
     // Force download of the PDF
-    const link = document.createElement('a');
-    link.href = '/resume.pdf';
-    link.download = 'Maksym_Resume.pdf';
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "Maksym_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -239,49 +239,50 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
   return (
     <ModalOverlay isOpen={isOpen} onClick={handleOverlayClick}>
       <ModalContent isOpen={isOpen}>
-            <CloseButton onClick={onClose}>×</CloseButton>
-            <ResumeContainer>
-              <ResumeHeader>
-                <ResumeTitle>Maksym</ResumeTitle>
-                <ResumeSubtitle>Full Stack & AI & Automation Developer</ResumeSubtitle>
-              </ResumeHeader>
-              
-              <ResumeContent>
-                <PDFContainer>
-                  <PDFControls>
-                    <PDFTitle>📄 Maksym's Resume</PDFTitle>
-                    <DownloadButton onClick={handleDownload}>
-                      📥 Download PDF
-                    </DownloadButton>
-                  </PDFControls>
-                  
-                  {!pdfError ? (
-                    <PDFViewer 
-                      src="/resume.pdf#toolbar=1&navpanes=1&scrollbar=1&page=1&view=FitV"
-                      title="Maksym's Resume"
-                      onLoad={handlePdfLoad}
-                      onError={handlePdfError}
-                    />
-                  ) : (
-                    <PDFFallback>
-                      <FallbackTitle>📄 Resume Not Found</FallbackTitle>
-                      <FallbackText>
-                        The resume PDF file is not found. Please make sure you have added your resume.pdf file to the public folder.
-                      </FallbackText>
-                      <DownloadButton onClick={handleDownload}>
-                        📥 Try Download Anyway
-                      </DownloadButton>
-                    </PDFFallback>
-                  )}
-                  
-                  {!pdfLoaded && !pdfError && (
-                    <LoadingSpinner>
-                      Loading your resume...
-                    </LoadingSpinner>
-                  )}
-                </PDFContainer>
-              </ResumeContent>
-            </ResumeContainer>
+        <CloseButton onClick={onClose}>×</CloseButton>
+        <ResumeContainer>
+          <ResumeHeader>
+            <ResumeTitle>Maksym</ResumeTitle>
+            <ResumeSubtitle>
+              Full Stack & AI & Automation Developer
+            </ResumeSubtitle>
+          </ResumeHeader>
+
+          <ResumeContent>
+            <PDFContainer>
+              <PDFControls>
+                <PDFTitle>📄 Maksym's Resume</PDFTitle>
+                <DownloadButton onClick={handleDownload}>
+                  📥 Download PDF
+                </DownloadButton>
+              </PDFControls>
+
+              {!pdfError ? (
+                <PDFViewer
+                  src="/resume.pdf#toolbar=1&navpanes=1&scrollbar=1&page=1&view=FitV"
+                  title="Maksym's Resume"
+                  onLoad={handlePdfLoad}
+                  onError={handlePdfError}
+                />
+              ) : (
+                <PDFFallback>
+                  <FallbackTitle>📄 Resume Not Found</FallbackTitle>
+                  <FallbackText>
+                    The resume PDF file is not found. Please make sure you have
+                    added your resume.pdf file to the public folder.
+                  </FallbackText>
+                  <DownloadButton onClick={handleDownload}>
+                    📥 Try Download Anyway
+                  </DownloadButton>
+                </PDFFallback>
+              )}
+
+              {!pdfLoaded && !pdfError && (
+                <LoadingSpinner>Loading your resume...</LoadingSpinner>
+              )}
+            </PDFContainer>
+          </ResumeContent>
+        </ResumeContainer>
       </ModalContent>
     </ModalOverlay>
   );
