@@ -456,7 +456,7 @@ const WhatIDo = () => {
             {/* AI & Automation */}
             <SkillItem>
               <SkillIcon>
-                <SiOpenai style={{ fontSize: "40px", color: "#412991" }} />
+                <SiOpenai style={{ fontSize: "40px", color: "#000000" }} />
               </SkillIcon>
               <SkillName>OpenAI API</SkillName>
             </SkillItem>
@@ -465,7 +465,7 @@ const WhatIDo = () => {
                 <span
                   style={{
                     fontSize: "24px",
-                    color: "#430098",
+                    color: "#00BCF2",
                     fontWeight: "bold",
                   }}
                 >
