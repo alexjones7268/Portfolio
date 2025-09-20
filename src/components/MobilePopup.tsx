@@ -31,12 +31,13 @@ const Illustration = styled.img`
 interface Props {
   open: boolean;
   close: () => void;
+  onResumeClick?: () => void;
 }
 
-const MobilePopup = ({ open, close }: Props) => {
+const MobilePopup = ({ open, close, onResumeClick }: Props) => {
   return (
     <StyledMobilePopup open={open}>
-      <Menus close={() => close()} />
+      <Menus close={() => close()} onResumeClick={onResumeClick} />
       <Socials />
       <Illustration src={illustration} />
     </StyledMobilePopup>

@@ -27,19 +27,28 @@ const MenuItem = styled(Link)`
 
 interface Props {
   close: () => void;
+  onResumeClick?: () => void;
 }
 
-const Menus = ({ close }: Props) => {
+const Menus = ({ close, onResumeClick }: Props) => {
+  const handleMenuClick = (menuItem: MenuItemType) => {
+    if (menuItem.value === "resume-modal" && onResumeClick) {
+      onResumeClick();
+    } else {
+      close();
+    }
+  };
+
   return (
     <StyledMenus>
       {menuItems.map((menuItem: MenuItemType) => (
         <MenuItem
           key={menuItem.value}
-          to={menuItem.value}
-          spy
-          smooth
+          to={menuItem.value === "resume-modal" ? "" : menuItem.value}
+          spy={menuItem.value !== "resume-modal"}
+          smooth={menuItem.value !== "resume-modal"}
           duration={2000}
-          onClick={() => close()}
+          onClick={() => handleMenuClick(menuItem)}
         >
           {menuItem.label}
         </MenuItem>

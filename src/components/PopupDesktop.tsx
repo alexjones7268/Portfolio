@@ -49,9 +49,10 @@ const ContentContainer = styled.div`
 interface Props {
   open: boolean;
   close: () => void;
+  onResumeClick?: () => void;
 }
 
-const PopupDesktop = ({ open, close }: Props) => {
+const PopupDesktop = ({ open, close, onResumeClick }: Props) => {
   return (
     <StyledPopupDesktop open={open}>
       <ColoredPannel>
@@ -60,7 +61,7 @@ const PopupDesktop = ({ open, close }: Props) => {
       <ContentPannel>
         <ContentContainer>
           <Socials />
-          <Menus close={() => close()} />
+          <Menus close={() => close()} onResumeClick={onResumeClick} />
         </ContentContainer>
       </ContentPannel>
     </StyledPopupDesktop>

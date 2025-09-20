@@ -20,6 +20,10 @@ const menuItems: MenuItemType[] = [
     label: "Portfolio",
     value: "portfolio-scroll",
   },
+  {
+    label: "Resume",
+    value: "resume-modal",
+  },
 ];
 
 export default menuItems;
