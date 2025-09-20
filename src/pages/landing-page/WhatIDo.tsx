@@ -123,7 +123,7 @@ const StyledWhatIDo = styled.div`
 
 const Content = styled.div`
   margin-left: -160px;
-  margin-top: -200px;
+  margin-top: -400px;
   position: relative;
   height: 100%;
   display: flex;
