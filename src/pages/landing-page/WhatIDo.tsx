@@ -2,18 +2,10 @@ import { GrMysql } from "react-icons/gr";
 import {
   SiPostgresql,
   SiMongodb,
-  SiGraphql,
   SiOpenai,
   SiPython,
-  SiCloudflare,
-  SiDocker,
-  SiLaravel,
-  SiDjango,
-  SiBootstrap,
-  SiChakraui,
   SiNextdotjs,
   SiAngular,
-  SiTailwindcss,
   SiN8N,
   SiMake,
   SiJavascript,
@@ -33,11 +25,9 @@ import {
   SiStorybook,
   SiReact,
 } from "react-icons/si";
-import { FaAws, FaDocker, FaNode, FaShopify, FaReact } from "react-icons/fa";
-import { TbWebhook, TbBrandZapier } from "react-icons/tb";
-import { CgMonday } from "react-icons/cg";
+import { FaAws, FaDocker, FaNode, FaReact } from "react-icons/fa";
+import { TbBrandZapier } from "react-icons/tb";
 import { AiFillGithub } from "react-icons/ai";
-import { BsPaypal, BsStripe, BsWordpress } from "react-icons/bs";
 import { RiVuejsFill } from "react-icons/ri";
 import { useRef } from "react";
 import styled from "styled-components";
