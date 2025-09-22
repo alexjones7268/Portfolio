@@ -109,7 +109,7 @@ const ExperienceItem = styled.div`
   overflow: hidden;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -124,7 +124,7 @@ const ExperienceItem = styled.div`
     border-color: var(--purple);
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(76, 63, 247, 0.15);
-    
+
     &::before {
       opacity: 1;
     }
@@ -245,7 +245,7 @@ const WorkExperience = () => {
         <WhiteSquare src={whiteSquare} />
         <LineHeader text="Work Experience" />
         <Bold>My professional journey.</Bold>
-        
+
         <ExperienceContainer>
           <ExperienceItem>
             <JobHeader>
@@ -256,10 +256,24 @@ const WorkExperience = () => {
               <JobDuration>Oct 2022 – Dec 2024</JobDuration>
             </JobHeader>
             <Achievements>
-              <Achievement>Led the architecture and delivery of a B2B SaaS platform using Next.js (frontend) and NestJS microservices (backend), deployed on AWS EKS.</Achievement>
-              <Achievement>Boosted performance by improving Lighthouse scores by 35+ points, reducing page load time by 20%.</Achievement>
-              <Achievement>Built a RAG-based AI chatbot (LangChain, OpenAI, Pinecone) answering 5,000+ queries/month, saving 40+ research hours weekly.</Achievement>
-              <Achievement>Automated CI/CD pipelines with GitHub Actions and optimized AWS resources, reducing cloud spend by 30% ($18,000 annually).</Achievement>
+              <Achievement>
+                Led the architecture and delivery of a B2B SaaS platform using
+                Next.js (frontend) and NestJS microservices (backend), deployed
+                on AWS EKS.
+              </Achievement>
+              <Achievement>
+                Boosted performance by improving Lighthouse scores by 35+
+                points, reducing page load time by 20%.
+              </Achievement>
+              <Achievement>
+                Built a RAG-based AI chatbot (LangChain, OpenAI, Pinecone)
+                answering 5,000+ queries/month, saving 40+ research hours
+                weekly.
+              </Achievement>
+              <Achievement>
+                Automated CI/CD pipelines with GitHub Actions and optimized AWS
+                resources, reducing cloud spend by 30% ($18,000 annually).
+              </Achievement>
             </Achievements>
           </ExperienceItem>
 
@@ -272,9 +286,19 @@ const WorkExperience = () => {
               <JobDuration>Feb 2019 – Apr 2022</JobDuration>
             </JobHeader>
             <Achievements>
-              <Achievement>Delivered full-lifecycle development for enterprise apps using MERN stack and .NET stack, improving reliability by 25%.</Achievement>
-              <Achievement>Built custom WordPress plugins & themes handling 100k+ monthly visitors with HubSpot & Salesforce API integrations, saving 15+ manual hours/week.</Achievement>
-              <Achievement>Developed a cross-platform React Native logistics app with real-time GPS tracking, cutting dispatch time by 18%.</Achievement>
+              <Achievement>
+                Delivered full-lifecycle development for enterprise apps using
+                MERN stack and .NET stack, improving reliability by 25%.
+              </Achievement>
+              <Achievement>
+                Built custom WordPress plugins & themes handling 100k+ monthly
+                visitors with HubSpot & Salesforce API integrations, saving 15+
+                manual hours/week.
+              </Achievement>
+              <Achievement>
+                Developed a cross-platform React Native logistics app with
+                real-time GPS tracking, cutting dispatch time by 18%.
+              </Achievement>
             </Achievements>
           </ExperienceItem>
 
@@ -287,9 +311,18 @@ const WorkExperience = () => {
               <JobDuration>Oct 2016 – Dec 2018</JobDuration>
             </JobHeader>
             <Achievements>
-              <Achievement>Identified 50+ processes for automation, generating annual ROI of $200k.</Achievement>
-              <Achievement>Built UiPath bots processing 500+ invoices weekly with 99.9% accuracy, saving 20+ manual hours/week.</Achievement>
-              <Achievement>Implemented HubSpot & Salesforce automations (lead scoring/nurturing), increasing MQLs by 50% in 6 months.</Achievement>
+              <Achievement>
+                Identified 50+ processes for automation, generating annual ROI
+                of $200k.
+              </Achievement>
+              <Achievement>
+                Built UiPath bots processing 500+ invoices weekly with 99.9%
+                accuracy, saving 20+ manual hours/week.
+              </Achievement>
+              <Achievement>
+                Implemented HubSpot & Salesforce automations (lead
+                scoring/nurturing), increasing MQLs by 50% in 6 months.
+              </Achievement>
             </Achievements>
           </ExperienceItem>
         </ExperienceContainer>

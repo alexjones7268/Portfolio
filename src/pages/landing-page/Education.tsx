@@ -199,7 +199,9 @@ const Education = () => {
           <EducationContainer>
             <EducationItem>
               <University>Warsaw University of Technology</University>
-              <Degree>Master of Science in Artificial Intelligence (MSc)</Degree>
+              <Degree>
+                Master of Science in Artificial Intelligence (MSc)
+              </Degree>
               <Duration>2019 - 2021</Duration>
             </EducationItem>
             <EducationItem>
