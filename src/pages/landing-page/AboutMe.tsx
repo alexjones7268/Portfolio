@@ -223,8 +223,10 @@ const AboutMe = () => {
         <TopSection>
           <LineHeader text="About me" />
           <Description>
-            Full Stack & AI & Automatoin Developer - building scalable web apps,
-            workflows, and smart contracts.
+          8+ years of experience building SaaS platforms, Automation Systems, and AI-powered solutions.
+          </Description>
+          <Description>
+          Cut cloud costs by 30%, automated 2,000+ engineering hours, and boosted user engagement by 25%.
           </Description>
           <Bold>Check out my work.</Bold>
         </TopSection>

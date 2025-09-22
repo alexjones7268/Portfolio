@@ -28,7 +28,6 @@ const StyledHeroContent = styled.div`
 
 const Header = styled.h2`
   font-weight: 600;
-
   font-size: 75px;
   line-height: 1.4;
   @media only screen and (max-width: 1400px) {
@@ -38,6 +37,36 @@ const Header = styled.h2`
   @media only screen and (max-width: 639px) {
     font-size: 30px;
     line-height: 1.6;
+  }
+`;
+
+const SubHeader = styled.h3`
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-top: 20px;
+  color: var(--purple);
+  @media only screen and (max-width: 1400px) {
+    font-size: 24px;
+  }
+  @media only screen and (max-width: 639px) {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+`;
+
+const Description = styled.p`
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 15px;
+  color: var(--sub);
+  @media only screen and (max-width: 1400px) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: 639px) {
+    font-size: 16px;
+    margin-top: 10px;
   }
 `;
 
@@ -74,7 +103,9 @@ const HeroContent = ({ scrollPercent }: Props) => {
   return (
     <StyledHeroContent>
       <LineHeader text="MAKSYM" />
-      <Header>Hi, I am Maksym, your Friendly Neighborhood Developer.</Header>
+      <Header>Hi, I am Maksym,</Header>
+      <Header>Senior Full-Stack</Header>
+      <Header>AI & Automation Engineer</Header>
       <WhiteSquare
         src={whiteSquare}
         style={{
