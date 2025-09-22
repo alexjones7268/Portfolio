@@ -99,21 +99,40 @@ const ExperienceContainer = styled.div`
 `;
 
 const ExperienceItem = styled.div`
-  background: var(--bg);
-  border-radius: 20px;
-  padding: 40px;
-  border: 1px solid var(--sub);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border-radius: 24px;
+  padding: 45px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--purple), #8b5cf6, #a855f7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
   &:hover {
     border-color: var(--purple);
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(76, 63, 247, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(76, 63, 247, 0.15);
+    
+    &::before {
+      opacity: 1;
+    }
   }
 
   @media only screen and (max-width: 639px) {
-    padding: 30px;
+    padding: 35px;
+    border-radius: 20px;
   }
 `;
 
@@ -132,37 +151,47 @@ const JobHeader = styled.div`
 `;
 
 const JobTitle = styled.h3`
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--purple);
+  font-size: 26px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--purple), #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0;
+  letter-spacing: -0.5px;
 
   @media only screen and (max-width: 639px) {
-    font-size: 20px;
+    font-size: 22px;
   }
 `;
 
 const Company = styled.p`
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--text);
+  font-size: 19px;
+  font-weight: 600;
+  color: #374151;
   margin: 0;
+  margin-top: 4px;
 
   @media only screen and (max-width: 639px) {
-    font-size: 16px;
+    font-size: 17px;
   }
 `;
 
 const JobDuration = styled.p`
-  font-size: 16px;
-  color: var(--sub);
-  font-weight: 400;
+  font-size: 15px;
+  color: #6b7280;
+  font-weight: 500;
   margin: 0;
   white-space: nowrap;
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
 
   @media only screen and (max-width: 639px) {
-    font-size: 14px;
+    font-size: 13px;
     white-space: normal;
+    padding: 4px 8px;
   }
 `;
 
@@ -174,24 +203,28 @@ const Achievements = styled.ul`
 
 const Achievement = styled.li`
   font-size: 16px;
-  color: var(--text);
-  margin-bottom: 12px;
-  padding-left: 20px;
+  color: #374151;
+  margin-bottom: 14px;
+  padding-left: 24px;
   position: relative;
-  line-height: 1.5;
+  line-height: 1.6;
+  width: 90%;
+  font-weight: 400;
 
   &::before {
-    content: "•";
+    content: "▶";
     color: var(--purple);
     font-weight: bold;
     position: absolute;
     left: 0;
-    font-size: 18px;
+    font-size: 12px;
+    top: 2px;
   }
 
   @media only screen and (max-width: 639px) {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-left: 20px;
   }
 `;
 

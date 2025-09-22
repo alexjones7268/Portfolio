@@ -4,66 +4,100 @@ import LineHeader from "../../components/LineHeader";
 import ScrollDown from "../../components/ScrollDown";
 
 import getScrollPercent from "../../utils/scroll-percent";
-import whiteSquare from "../../assets/hero/main-pic-9.png";
-import pinkSquare from "../../assets/hero/main-pic-8.png";
 import { useScroll } from "../../hooks/use-scroll";
+import WhatIDoIllustration from "./WhatIDoIllustration";
 
 const StyledEducation = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  align-items: center;
+  background: var(--dark);
   overflow: hidden;
-  flex-direction: column;
 
-  background: radial-gradient(
-    75.22% 75.22% at 20.49% 12.79%,
-    #ffffff 0%,
-    rgba(228, 231, 233, 0.502295) 100%
-  );
+  height: 100vh;
+  @media only screen and (max-width: 1400px) {
+    height: 100vh;
+  }
   @media only screen and (max-width: 639px) {
-    background: var(--bg);
+    height: auto;
   }
 
-  padding: 120px calc(15% + 60px);
+  padding: 60px 0;
+  padding-left: calc(15% + 60px);
   @media only screen and (max-width: 1550px) {
-    padding: 120px calc(10% + 60px);
+    padding-left: calc(10% + 60px);
   }
   @media only screen and (max-width: 1450px) {
-    padding-left: calc(5% + 35px);
-    padding-right: calc(5% + 35px);
+    padding-left: calc(5% + 135px);
   }
   @media only screen and (max-width: 639px) {
-    padding: 60px 30px;
+    padding-left: 0;
   }
-`;
-
-const PinkSquare = styled.img`
-  position: absolute;
-  top: 450px;
-  left: -29%;
-  width: 68%;
-
   @media only screen and (max-width: 639px) {
-    display: none;
+    padding: 60px 130px;
+  }
+
+  ::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transform: translate(50%, -50%);
+
+    top: 50%;
+    right: 30%;
+    height: 160vh;
+    width: 160vh;
+    @media only screen and (max-width: 1400px) {
+      right: 25%;
+      height: 130vh;
+      width: 130vh;
+    }
+    @media only screen and (max-width: 639px) {
+      top: 30%;
+      right: 50%;
+      height: 150vw;
+      width: 150vw;
+    }
+  }
+
+  ::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transform: translate(50%, -50%);
+
+    top: 50%;
+    right: 30%;
+    height: 100vh;
+    width: 100vh;
+    @media only screen and (max-width: 1400px) {
+      right: 25%;
+      height: 80vh;
+      width: 80vh;
+    }
+    @media only screen and (max-width: 639px) {
+      top: 30%;
+      right: 50%;
+      height: 100vw;
+      width: 100vw;
+    }
   }
 `;
 
 const Content = styled.div`
   position: relative;
+  margin-left: -160px;
+  position: relative;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-`;
-
-const WhiteSquare = styled.img`
-  position: absolute;
-  right: -240px;
-  bottom: -120px;
-  width: 300px;
-
-  @media only screen and (max-width: 639px) {
-    display: none;
-  }
+  justify-content: space-between;
+  max-width: 870px;
 `;
 
 const Bold = styled.p`
@@ -71,6 +105,7 @@ const Bold = styled.p`
   line-height: 1.16667;
   letter-spacing: -0.5px;
   font-weight: 600;
+  color: var(--bg);
 
   font-size: 72px;
   margin-bottom: 80px;
@@ -100,28 +135,26 @@ const EducationContainer = styled.div`
 `;
 
 const EducationItem = styled.div`
-  background: var(--bg);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  padding: 40px;
-  border: 1px solid var(--sub);
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
   &:hover {
     border-color: var(--purple);
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(76, 63, 247, 0.1);
   }
 
   @media only screen and (max-width: 639px) {
-    padding: 30px;
+    padding: 24px;
   }
 `;
 
 const University = styled.h3`
   font-size: 28px;
   font-weight: 600;
-  color: var(--purple);
+  color: var(--bg);
   margin-bottom: 15px;
 
   @media only screen and (max-width: 639px) {
@@ -132,7 +165,7 @@ const University = styled.h3`
 const Degree = styled.p`
   font-size: 20px;
   font-weight: 500;
-  color: var(--text);
+  color: var(--bg);
   margin-bottom: 8px;
 
   @media only screen and (max-width: 639px) {
@@ -142,7 +175,7 @@ const Degree = styled.p`
 
 const Duration = styled.p`
   font-size: 16px;
-  color: var(--sub);
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
 
   @media only screen and (max-width: 639px) {
@@ -157,31 +190,27 @@ const Education = () => {
 
   return (
     <StyledEducation ref={pageRef} id="education-scroll">
-      <PinkSquare
-        src={pinkSquare}
-        style={{
-          transform: `translateY(calc(${scrollPercent} * 400px))`,
-        }}
-      />
+      <WhatIDoIllustration scrollPercent={scrollPercent} />
       <Content>
-        <WhiteSquare src={whiteSquare} />
-        <LineHeader text="Education" />
-        <Bold>My academic journey.</Bold>
-        
-        <EducationContainer>
-          <EducationItem>
-            <University>Warsaw University of Technology</University>
-            <Degree>Master of Science in Artificial Intelligence (MSc)</Degree>
-            <Duration>2019 - 2021</Duration>
-          </EducationItem>
-          <EducationItem>
-            <University>Warsaw University of Technology</University>
-            <Degree>Bachelor of Science in Computer Science (BSc)</Degree>
-            <Duration>2016 - 2019</Duration>
-          </EducationItem>
-        </EducationContainer>
+        <div />
+        <div>
+          <LineHeader pink text="Education" />
+          <Bold>My academic journey.</Bold>
+          <EducationContainer>
+            <EducationItem>
+              <University>Warsaw University of Technology</University>
+              <Degree>Master of Science in Artificial Intelligence (MSc)</Degree>
+              <Duration>2019 - 2021</Duration>
+            </EducationItem>
+            <EducationItem>
+              <University>Warsaw University of Technology</University>
+              <Degree>Bachelor of Science in Computer Science (BSc)</Degree>
+              <Duration>2016 - 2019</Duration>
+            </EducationItem>
+          </EducationContainer>
+        </div>
+        <ScrollDown target="work-experience-scroll" white />
       </Content>
-      <ScrollDown target="work-experience-scroll" />
     </StyledEducation>
   );
 };
