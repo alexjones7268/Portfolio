@@ -54,14 +54,14 @@ const portfolioTabs: TabType[] = [
         description:
           "About Infinify (public ver.) is an AI-powered SaaS application that lets you enjoy various features such as AI chat, image generation, image editing, and more | Next.js, React, Tailwind CSS, Typescript, Clerk, mongodb, shadcn/ui, Stripe",
         image: infinify,
-        link: "https://github.com/Maksym-TopDev/AI_Chat_Image_generation",
+        link: "https://github.com/Takumi-TopDev/AI_Chat_Image_generation",
       },
       {
         name: "Vue Admin Dashboard",
         description:
           "Vue Material Admin Template is a Vue Based Material Design Admin Template. And use Vuetifyjs as base framework. Vuetify is Awesome.",
         image: vue_dashboard,
-        link: "https://github.com/Maksym-TopDev/Vue_Material_Admin_Dashboard",
+        link: "https://github.com/Takumi-TopDev/Vue_Material_Admin_Dashboard",
       },
       {
         name: "State Insurance",
@@ -115,7 +115,7 @@ const portfolioTabs: TabType[] = [
         description:
           "This project is a clone of Zapier, featuring integrations with Google services like Drive, Gmail, and Sheets, allowing for seamless automation across these platforms. It also includes a GitHub comment integration, enabling workflows that automate tasks based on GitHub activity.",
         image: Google_OtherPlatform_integration_Automation,
-        link: "https://github.com/Maksym-TopDev/Google_OtherPlatform_integration_Automation",
+        link: "https://github.com/Takumi-TopDev/Google_OtherPlatform_integration_Automation",
       },
       {
         name: "Automated Multi-Store Price Tracker with Make.com, Apify & AI Vision",
@@ -136,7 +136,7 @@ const portfolioTabs: TabType[] = [
         description:
           "An intelligent pipeline that automates lead generation and contextual enrichment from raw CSV data. Real-time keyword filtering via SerpAPI, Contextual data tagging using Groq’s LLaMA3-powered LLM CRM-ready CSV outputs with seamless export support",
         image: AI_Powered_Data_Enrichment_System,
-        link: "https://github.com/Maksym-TopDev/AI-Powered-Data-Enrichment-System",
+        link: "https://github.com/Takumi-TopDev/AI-Powered-Data-Enrichment-System",
       },
       {
         name: "N8N | HubSpot CRM Automation: Last Contacted Report + Contact Sync",
@@ -157,7 +157,7 @@ const portfolioTabs: TabType[] = [
         description:
           "FastAPI Web Service API with OpenAI integration. Send Gmail data via Zapier webhook & get customized output using OpenAI API. Fast, efficient, and AI-powered automation. Explore AI-driven possibilities now! #FastAPI #OpenAI #AI-Automation",
         image: Gmail_GPT_Automation,
-        link: "https://github.com/Maksym-TopDev/Gmail_GPT_automation",
+        link: "https://github.com/Takumi-TopDev/Gmail_GPT_automation",
       },
     ],
   },

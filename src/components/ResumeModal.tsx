@@ -230,7 +230,7 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
     // Force download of the PDF
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Maksym_Resume.pdf";
+    link.download = "Takumi_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -242,7 +242,7 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
         <CloseButton onClick={onClose}>×</CloseButton>
         <ResumeContainer>
           <ResumeHeader>
-            <ResumeTitle>Maksym</ResumeTitle>
+            <ResumeTitle>Takumi</ResumeTitle>
             <ResumeSubtitle>
               Full Stack & AI & Automation Developer
             </ResumeSubtitle>
@@ -251,7 +251,7 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
           <ResumeContent>
             <PDFContainer>
               <PDFControls>
-                <PDFTitle>📄 Maksym's Resume</PDFTitle>
+                <PDFTitle>📄 Takumi's Resume</PDFTitle>
                 <DownloadButton onClick={handleDownload}>
                   📥 Download PDF
                 </DownloadButton>
@@ -260,7 +260,7 @@ const ResumeModal = ({ isOpen, onClose }: ResumeModalProps) => {
               {!pdfError ? (
                 <PDFViewer
                   src="/resume.pdf#toolbar=1&navpanes=1&scrollbar=1&page=1&view=FitV"
-                  title="Maksym's Resume"
+                  title="Takumi's Resume"
                   onLoad={handlePdfLoad}
                   onError={handlePdfError}
                 />

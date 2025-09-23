@@ -33,7 +33,7 @@ const Logo = ({ primary }: Props) => {
     <StyledLogo>
       <LogoIcon primary={primary} />
       <Text primary={primary}>
-        Maksym<Fullstop>.</Fullstop>
+        Takumi<Fullstop>.</Fullstop>
       </Text>
     </StyledLogo>
   );

@@ -20,9 +20,9 @@ Just be sure to add the `requires validation` tag, and I will take care of doing
 
 ## Issues
 
-There are a bunch of [open issues](https://github.com/Maksym-TopDev/Personal-Website/issues) that would be great if you could help with.  
+There are a bunch of [open issues](https://github.com/Takumi-TopDev/Personal-Website/issues) that would be great if you could help with.  
 Feel free to work on any issue that isn't already assigned to someone.  
-Issues that are tagged with [good first issue](https://github.com/Maksym-TopDev/Personal-Website/labels/good%20first%20issue) are the best place to start.
+Issues that are tagged with [good first issue](https://github.com/Takumi-TopDev/Personal-Website/labels/good%20first%20issue) are the best place to start.
 
 ## Development Workflow
 
