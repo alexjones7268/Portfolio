@@ -56,7 +56,7 @@ const Header = () => {
     // Force download of the PDF
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Takumi_Resume.pdf";
+    link.download = "Maksym_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

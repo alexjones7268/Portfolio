@@ -102,8 +102,8 @@ interface Props {
 const HeroContent = ({ scrollPercent }: Props) => {
   return (
     <StyledHeroContent>
-      <LineHeader text="Takumi" />
-      <Header>Hi, I am Takumi,</Header>
+      <LineHeader text="Maksym" />
+      <Header>Hi, I am Maksym,</Header>
       <Header>Senior Full-Stack</Header>
       <Header>AI & Automation Engineer</Header>
       <WhiteSquare

@@ -1,12 +1,12 @@
 ## About
 
-<!-- This repo is for [the website of Takumi](https://Takumi-musii.vercel.app).   -->
+<!-- This repo is for [the website of Maksym](https://Maksym-musii.vercel.app).   -->
 
 This site is built using React, everyone's favourite web development framework!
 
 <!-- ## Contributing
 
-If you are interested in contributing, please check out the [Contribution Guide](https://github.com/Takumi-TopDev/personal-website/blob/master/.github/CONTRIBUTING.md). -->
+If you are interested in contributing, please check out the [Contribution Guide](https://github.com/Maksym-TopDev/personal-website/blob/master/.github/CONTRIBUTING.md). -->
 
 ## Running Locally
 
