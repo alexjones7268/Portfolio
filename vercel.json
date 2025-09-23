@@ -5,9 +5,7 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build",
-        "installCommand": "npm ci --no-audit --no-fund",
-        "buildCommand": "npm run build"
+        "distDir": "build"
       }
     }
   ],
@@ -26,5 +24,7 @@
   "env": {
     "NODE_VERSION": "18.x"
   },
+  "installCommand": "npm ci --no-audit --no-fund",
+  "buildCommand": "npm run build",
   "outputDirectory": "build"
 }
