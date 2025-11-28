@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 const StyledSocial = styled.a`
@@ -38,7 +39,7 @@ const Text = styled.p`
 `;
 
 interface Props {
-  icon: JSX.Element;
+  icon: React.ReactNode;
   text: string;
   link: string;
 }
