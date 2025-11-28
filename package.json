@@ -6,7 +6,6 @@
     "@material-ui/icons": "^4.11.2",
     "framer-motion": "^6.5.1",
     "highlightjs-solidity": "^2.0.6",
-    "lint": "^0.8.19",
     "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

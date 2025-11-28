@@ -196,7 +196,6 @@ const JobDuration = styled.p`
 `;
 
 const Achievements = styled.ul`
-
   list-style: none;
   padding: 0;
   margin: 0;
@@ -317,13 +316,16 @@ const WorkExperience = () => {
             </JobHeader>
             <Achievements>
               <Achievement>
-                Identified 50+ processes for automation, generating annual ROI of $200k.
+                Identified 50+ processes for automation, generating annual ROI
+                $200k.
               </Achievement>
               <Achievement>
-                Built UiPath bots processing 500+ invoices weekly with 99.9% accuracy, saving 20+ manual hours/week.
+                Built UiPath bots processing 500+ invoices weekly with 99.9%
+                accuracy, saving 20+ manual hours/week.
               </Achievement>
               <Achievement>
-                Implemented HubSpot & Salesforce automations (lead scoring/nurturing), increasing MQLs by 50% in 6 months.
+                Implemented HubSpot & Salesforce automations (lead
+                scoring/nurturing), increasing MQLs by 50% in 6 months.
               </Achievement>
             </Achievements>
           </ExperienceItem>
